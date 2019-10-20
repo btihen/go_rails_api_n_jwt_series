@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create!(email: 'btihen@gmail.com', password: 'StrongNyima', password_confirmation: 'StrongNyima')
+
 l = Location.create(name: "Bolligen")
 l.recordings.create(temp: 14, status: "heavy rain", created_at: DateTime.now-4.days, updated_at: DateTime.now-4.days)
 l.recordings.create(temp: 15, status: "rain", created_at: DateTime.now-3.days, updated_at: DateTime.now-3.days)
